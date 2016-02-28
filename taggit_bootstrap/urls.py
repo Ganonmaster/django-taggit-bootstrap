@@ -1,5 +1,5 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 from .views import *
-urlpatterns = patterns('', 
-		url(r'^$',TaggitBoostrapView.as_view(),name='taggit-bootstrap')
-	)
+urlpatterns = [
+    url(r'^$', TaggitBoostrapView.as_view(), name='taggit-bootstrap')
+]
