@@ -13,7 +13,7 @@ CONFIGURATION
 ```
 urlpatterns = [
     ...  
-    url(r'^taggit/',include('taggit_bootstrap.urls')),
+    url(r'^taggit/', include('taggit_bootstrap.urls')),
 ]
 ```
 4. Use TagsInput widget like this
