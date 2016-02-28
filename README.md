@@ -11,10 +11,10 @@ CONFIGURATION
 2. Add `taggit_bootstrap` into your `INSTALLED_APPS`.
 3. Add `taggit_bootstrap.urls` into your urls patterns. E.q.
 ```
-urlpatterns = patterns('',
-  ...  
-  url(r'^taggit/',include('taggit_bootstrap.urls')),
-)
+urlpatterns = [
+    ...  
+    url(r'^taggit/',include('taggit_bootstrap.urls')),
+]
 ```
 4. Use TagsInput widget like this
 ```
