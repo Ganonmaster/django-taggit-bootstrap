@@ -11,7 +11,6 @@ from django.utils import six
 class TagsInput(forms.TextInput):
     class Media:
         css = {'all': ('css/bootstrap-tagsinput.css', 'css/typeahead.css')}
-        js = ('js/typeahead.jquery.min.js', 'js/bootstrap-tagsinput.min.js')
 
     def render(self, name, value, attrs={}):
         if value is not None and not isinstance(value, six.string_types):
